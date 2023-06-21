@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+::selection{
+    background-color: #3ada82;
+    color: black;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #0aa24f;
+    --cor1: #a0ff7b3a;
+    --cor2: #099548;
+    --cor2_1: #405B48;
+    --cor3: #f2e5d579;
+    --cor4: #403E3C;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    font-family: var(--fonte-padrao);
+}
+
+p{
+    margin: 15px 0px;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+header{
+    background-image: linear-gradient( to bottom, #0aa24f, #000000fb) ;
+    min-height: 150px;
+    padding-top: 35px;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.735);
+    text-align: center;
+}
+
+header > h1{
+    color: whitesmoke;
+    font-size: 2em;
+    font-family: var(--fonte-android);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+header > p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.1em;
+    user-select: none;
+    margin: auto;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav{
+    background-color: #000000;
+    height: 40px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.518);
+}
+
+nav > a{
+    color: #59df95;
+    margin-left: 20px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: large;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: #0aa24f;
+    color: #fbf3e9;
+    border-radius: 7px;
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
+nav > a:visited{
+    color: rgb(248, 151, 170);
+}
+
+main{
+    font-size: 18px;
+    text-align: justify;
+    background-color: var(--cor3);
+    color: var(--cor4);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.621);
+}
+
+main h1{
+    color: var(--cor2_1);
+    font-family: var(--fonte-android);
+}
+
+main h2{
+    color: var(--cor2);
+    font-family: var(--fonte-android);
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, #a0ff7ba9, transparent);
+}
+
+main strong{
+    color: rgb(39, 76, 35);
+}
+
+main a{
+    color: #3ada82;
+    background-color: #000000b4;
+    padding: 2px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+    font-size: 16px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: #f2e5d5;
+}
+
+main img.pequena{
+    max-width: 350px;
+}
+
+img{
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.video{
+    background-color: rgba(0, 0, 0, 0.127);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.4%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color: #c0ffdd;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.437);
+}
+
+aside > h3{
+    text-align: center;
+    background-color: var(--cor4);
+    color: #f2e5d5;
+    padding: 10px;
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style: '\2714\00A0'; /*é um tipo de espaçamento*/
+    list-style-position: inside;
+    columns: 2;
+    text-align: center;
+}
+
+footer{
+    background-color: var(--cor4);
+    color: #3ada82;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.561);
+    height: 40px;
+    font-size: 15px;
+    padding: 10px;
+    margin: auto;
+    bottom: 0;
+    user-select: none;
+    clear: both;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track { /*define o estilo da área da scrollbar onde o conteúdo não está visível.*/
+    background: transparent; 
+  }
+  
+  ::-webkit-scrollbar-thumb { /*define o estilo do polegar (a parte que você arrasta) da scrollbar.*/
+    background: #3ada82;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #23402A;
+  }
+  

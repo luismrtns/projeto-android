@@ -44,8 +44,10 @@ p{
 }
 
 header{
+    margin: auto;
+    width: 100%;
     background-image: linear-gradient( to bottom, #0aa24f, #000000fb) ;
-    min-height: 150px;
+    min-height: 160px;
     padding-top: 35px;
     text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.735);
     text-align: center;
@@ -114,6 +116,7 @@ main{
 }
 
 main h1{
+    font-size: 1.3em;
     color: var(--cor2_1);
     font-family: var(--fonte-android);
 }
